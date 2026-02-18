@@ -23,7 +23,7 @@ const bio = ref({
   <main class="flex min-h-screen flex-col items-center px-4 py-8 sm:py-12">
     <RouterLink
       to="/"
-      class="my-8 self-start text-sm text-gray-400 underline-offset-4 transition-colors duration-200 hover:text-blue-400 hover:underline"
+      class="my-8 self-start text-lg text-blue-600 underline-offset-4 transition-colors duration-200 hover:text-blue-900 hover:underline"
     >
       ← Back to Links
     </RouterLink>
