@@ -6,8 +6,14 @@ const bio = ref({
   name: 'Saul Medina',
   avatar: avatar,
   about:
-    'I am a passionate full-stack developer student with experience building modern web applications. ',
-  skills: ['Vue.js', 'React', 'Typescript', 'node.js', 'Tailwind CSS'],
+    'I am passionate about my family and my education. I have my associates degree as a network specialist and am currently working towards my Bachelor of Computer Science. I also do part time audio engineering for live bands. ',
+  skills: [
+    'A +',
+    'Netowrk +',
+    'Security +',
+    'Live Sound engineering',
+    'Integrated A/V systems designer',
+  ],
   email: 'smedina_9827@southtexascollege.edu',
   location: 'San Juan, TX',
 })

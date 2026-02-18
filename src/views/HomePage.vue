@@ -7,6 +7,29 @@ const profile = ref({
   name: 'Saul Medina',
   slogan: 'Full stack dev student',
   avatar: avatar,
+  links: [
+    {
+      id: 1,
+      title: 'Github',
+      url: 'https://github.com/smedWolf26',
+      icon: 'code',
+      description: 'Check out my projects',
+    },
+    {
+      id: 2,
+      title: 'Linkedin',
+      url: 'https://linkedin.com/in/saul-medina-a248b4161/',
+      icon: 'briefcase',
+      description: 'Connect with me professionally',
+    },
+    {
+      id: 3,
+      title: 'Split the Bill web app',
+      url: 'https://splitthebill2026-vue.smedina-lambda.workers.dev/',
+      icon: 'money',
+      description: 'Need to split the bill? Click here!',
+    },
+  ],
 })
 </script>
 
@@ -32,8 +55,12 @@ const profile = ref({
     <!-- LInk List-->
     <div class="flex w-full max-w-md flex-col gap-4">
       <LinkCard
-        v-for="x of [1, 2, 3]"
-        :key="x"
+        v-for="link in profile.links"
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+        :description="link.description"
+        :icon="link.icon"
       />
     </div>
 
